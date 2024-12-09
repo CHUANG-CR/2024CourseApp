@@ -3,16 +3,6 @@
 #include <iostream>
 using namespace std;
 
-// Constructor, �غc�l, �غc���
-//Person::Person(const string& id, const string& lastName, const string& firstName, const string& gender, const string& birthDate)
-//{
-//	this->id = id;
-//	this->lastName = lastName;
-//	this->firstName = firstName;
-//	this->lastName = lastName;
-//	this->birthDate = birthDate;
-//}
-
 Person::Person(const string& id, const string& lastName, const string& firstName, const string& gender, const string& birthDate) : id(id), lastName(lastName), firstName(firstName), gender(gender), birthDate(birthDate)
 {
 }
@@ -74,8 +64,8 @@ void Person::setBirthDate(const string& birthDate)
 void Person::display() const
 {
 	cout << "ID: " << id << endl;
-	cout << "�m: " << lastName << endl;
-	cout << "�W: " << firstName << endl;
-	cout << "�ʧO: " << gender << endl;
-	cout << "�ͤ�: " << birthDate << endl;
+	cout << "姓: " << lastName << endl;
+	cout << "名: " << firstName << endl;
+	cout << "性別: " << gender << endl;
+	cout << "生日: " << birthDate << endl;
 }
